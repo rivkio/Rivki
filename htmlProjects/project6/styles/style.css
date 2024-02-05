@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    background-image: url("../asset/Path\ 15.png");
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+    /* background-size: contain; */
+    background-size: 100vw 70vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    color: #D3E10E;
+    font: normal normal bold 86px/113px Assistant;
+    text-align: center;
+    margin-top: 200px;
+}
+
+p {
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 5em;
+
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+
+}
+
+lable {
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+
+}
+
+input {
+    background-color: #F6F6F6;
+    border-bottom: 4px solid #D3E10E;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-left: 20px;
+    height: 60px;
+    width: 350px;
+}
+
+.form>.control>button[type=submit] {
+    background-color: #D3E10E;
+    width: 140px;
+    height: 40px;
+    color: #011560;
+    font: normal normal bold 22px/30px Assistant;
+    border: none;
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+@media screen and (max-width:1200px) {
+
+
+    #container {
+        height: 47vh;
+        background-size: 100vw 47vh;
+        text-align: center;
+    }
+
+
+    h1 {
+        font-size: 32px;
+        margin-top: 20px;
+
+    }
+
+    p {
+        font-size: 17px;
+        margin-top: 1px;
+        width: 100vw;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .control {
+        margin-bottom: 20px;
+    }
+
+    lable {
+        margin-bottom: 5px;
+        font: normal normal bold 10px/14px Heebo;
+        font-size: 12px;
+    }
+
+    input {
+        margin-left: 0;
+        width: 290px;
+        background-color: #E5EEFF;
+
+    }
+
+
+    .form>.control>button[type=submit] {
+        width: 290px;
+        height: 60px;
+        font: normal normal bold 14px/19px Heebo;
+        font-size: 16px;
+    }
+}

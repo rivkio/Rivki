@@ -1,0 +1,129 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+
+
+   #main-box {
+       background-image: url("../asset/Path 15.png");
+       background-repeat: no-repeat;
+       width: 100%;
+       background-size: contain;
+       height: 100vh;
+       display: flex;
+   }
+
+   .box {
+       width: 569px;
+       height: 643px;
+       background-color: #1A1A1AD4;
+       text-align: center;
+       color: #fff;
+       line-height: 1.5;
+       padding: 40px 56px;
+       margin-left: 1200px;
+       margin-top: 200px;
+
+   }
+
+   h2 {
+       font: normal normal 900 36px/53px Heebo;
+       padding-top: 1em;
+       padding-bottom: 1em;
+   }
+
+
+   p {
+       text-align: center;
+       font: normal normal normal 20px/29px Heebo;
+       color: #F9F9F9;
+       padding-bottom: 1em;
+   }
+
+   .container {
+       text-align: right;
+   }
+
+   .control {
+       display: flex;
+       flex-direction: column;
+
+   }
+
+   input {
+       height: 5vh;
+       border: 1px solid #D31C75;
+       margin-bottom: 1em;
+   }
+
+   label {
+       font: normal normal bold 16px/24px Heebo;
+   }
+
+   #button {
+       width: 166px;
+       height: 50px;
+       background-color: #D31C75;
+       color: #fff;
+       font: normal normal bold 22px/30px Heebo;
+       letter-spacing: 0.33px;
+       margin-top: 34.5px;
+   }
+
+   @media screen and (max-width:1200px) {
+
+
+       #main-box {
+           width: 100%;
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-size: 100vw 30vh;
+       }
+
+       .box {
+           margin: auto;
+           width: 299px;
+           height: 441px;
+           align-items: center;
+           flex-direction: column;
+           justify-content: center;
+           padding: 0 33px;
+           margin-top: 4em;
+       }
+
+       h2 {
+           font: normal normal 900 25px/30px Heebo;
+           padding-top: 1.5em;
+           padding-bottom: 10px;
+       }
+
+       p {
+           text-align: center;
+           font: normal normal normal 15px/22px Heebo;
+           color: #F9F9F9;
+           margin-top: 12px;
+           margin-bottom: 0;
+       }
+
+       input {
+           width: 230px;
+           height: 28px;
+       }
+
+       label {
+           font: normal normal bold 14px/21px Heebo;
+
+       }
+
+       #button {
+           width: 76px;
+           height: 33px;
+           font: normal normal bold 15px/20px Heebo;
+           margin-bottom: 56px;
+           margin-top: 16px;
+       }
+   }

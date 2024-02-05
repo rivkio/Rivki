@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        window.addEventListener('resize', function () {
+            var label = document.getElementById('fullName');
+            if (window.innerWidth <= 1200) {
+                label.textContent = "Full Name";
+            } else {
+                label.textContent = "First Name";
+            }
+        });
+
+
+        /*     document.addEventListener('DOMContentLoaded', function () {
+                    const links = document.querySelectorAll('.navbar a');
+    
+                    links.forEach(link => {
+                        link.addEventListener('mouseover', function () {
+                            links.forEach(otherLink => {
+                                otherLink.classList.remove('active');
+                            });
+                            this.classList.add('active');
+                        });
+    
+                        link.addEventListener('mouseout', function () {
+                            this.classList.remove('active');
+                        });
+                    });
+                }); */
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rivki.</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Services</a>
+            <a href="#container-contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section id="home">
+        <div class="home-pic"></div>
+        <div class="home-content">
+            <h1>Hi, I'm Rivki Ozeri</h1>
+            <h3>Frontend Developer</h3>
+            <p>a passionate web developer who loves turning ideas into stunning digital experiences.
+                With expertise in HTML, CSS, SASS, BOOTSTRAP
+                I create clean and intuitive websites that leave a lasting impression..
+            </p>
+            <div class="btn-box">
+                <a href="">Hire Me</a>
+                <a href="">Let's Talk</a>
+            </div>
+        </div>
+
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <div class="home-sci1">
+        <div class="home-sci">
+            <a href="#" id="home-link1"><i class='bx bxl-html5'></i></a>
+            <a href="#" id="home-link2"><i class='bx bxl-css3'></i></a>
+            <a href="#" id="home-link3"><i class='bx bxl-sass'></i></a>
+            <a href="#" id="home-link4"><i class='bx bxl-bootstrap'></i></a>
+        </div>
+    </div>
+
+
+
+
+    <div id="about">
+        <img class="pic-about" src="./asset/rivki22.jpg" alt="rivki"><br><br>
+        <h2 class="title2">About Me</h2><br>
+        <p class="aboutme">I am 30 years old from Bnei Brak, by profession I am an English teacher, I also worked in a
+            finance office and credit
+            company, I worked a lot with clients and expanded my financial knowledge, at the moment I specialize in
+            programming and
+            am passionate about it
+        </p><br><br>
+
+        <div class="btn-resume"><a href="./no CV.txt" download="">Download CV</a></div>
+
+    </div>
+
+
+    <section id="gallery">
+
+        <h2 class="title2-projects">Selected Projects</h2><br>
+
+        <div id="container-gallery">
+            <div class="card">
+                <div id="bg-image1"></div>
+                <h3>Project1</h3>
+                <p>An example of the position of a picture and a form.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project1/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image2"></div>
+                <h3>Project2</h3>
+                <p>An example of using a font and a two-color background.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project2/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image3"></div>
+                <h3>Project3</h3>
+                <p>An example of complex content position.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project3/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image4"></div>
+                <h3>Project4</h3>
+                <p>An example for grid position and grid adaptive.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project4/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image5"></div>
+                <h3>Project5</h3>
+                <p>More complex position of containers and icons with background.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project5/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image6"></div>
+                <h3>Project6</h3>
+                <p>An example of the position of a picture and a form.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project6/presentation.html">click</a></div>
+            </div>
+            <div class="card">
+                <div id="bg-image7"></div>
+                <h3>Project7</h3>
+                <p>More complex placement of containers with background, symbols, grid and form.</p>
+                <div class="icons-gallery"> <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                </div>
+                <div class="btn-gallery"> <a href="./htmlProjects/project7/presentation.html">click</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="container-contact">
+
+        <form>
+            <h2 id="title-contact">Contact Me</h2><br>
+            <p></p>
+
+
+            <div id="form">
+                <div id="full-name" class="form-control">
+                    <label for="first-name" id="fullName" class="form-label">First Name</label><br>
+                    <input type="text" class="form-control" id="inputName" name="first-name">
+                </div>
+
+                <div class="form-control">
+                    <label for="inputEmail1" class="form-label">Email address</label><br>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                        aria-describedby="emailHelp">
+                </div>
+
+                <div id="last-name-box" class="form-control">
+                    <label for="last-name" class="form-label">Last Name</label><br>
+                    <input type="text" class="form-control" id="inputName" name="last-name">
+                </div>
+
+                <div class="form-control">
+                    <label for="phone" class="form-label">Phone Number</label><br>
+                    <input type="number" id="phone" name="phone">
+                </div>
+
+                <div class="form-control">
+                    <label for="inputText" class="form-label">Contents</label><br>
+                    <textarea cols="160" rows="7"></textarea>
+                    <!-- <input class="message" type="text" class="form-control" id="inputPhone" name="text"> -->
+                </div>
+
+                <div class="form-control2">
+                    <button type="submit" value="send" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+    <footer id="footer-box">
+        <div id="container-footer">
+            <p>Developed by RO</p>
+            <p>Rivki Ozeri</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

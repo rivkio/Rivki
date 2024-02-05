@@ -1,0 +1,129 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+     color: #fff;
+     text-align: center;
+     direction: rtl;
+ }
+
+ section {
+     direction: rtl;
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ h1 {
+     font: normal normal normal 160px/231px Satisfy;
+     text-align: center;
+ }
+
+ h2 {
+     font: normal normal normal 32px/38px Varela Round;
+ }
+
+ p {
+     font: normal normal normal 16px/20px Varela Round;
+     margin-top: 18px;
+     margin-bottom: 20px;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     height: 50px;
+     align-items: flex-end;
+ }
+
+ .control {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     text-align: right;
+     margin: 0 1em;
+     width: 200px;
+ }
+
+ input {
+     height: 25px;
+     border: 2px solid #fff;
+     background: #F6F6F624 0% 0% no-repeat padding-box;
+
+ }
+
+ #bottom {
+     margin-top: 1em;
+     background-color: #fff;
+     width: 100px;
+ }
+
+ @media screen and (max-width:1200px) {
+     section {
+         width: 100vw;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+     }
+
+     #main-container {
+         height: 70vh;
+     }
+
+     .container {
+         width: 100vw;
+         flex-direction: column;
+         justify-content: flex-start;
+     }
+
+     h1 {
+         font: normal normal normal 60px/86px Satisfy;
+         margin-bottom: 20px;
+
+     }
+
+     h2 {
+         font: normal normal normal 18px/22px Varela Round;
+
+     }
+
+     p {
+         font: normal normal normal 16px/20px Varela Round;
+         text-align: center;
+         margin: 58px;
+         margin-bottom: 50px;
+     }
+
+     .control {
+         margin: auto;
+         font: normal normal normal 10px/12px Varela Round;
+         align-items: center;
+
+
+     }
+
+     lable {
+         margin-top: 20px;
+     }
+
+     input {
+         width: 320px;
+         height: 35px;
+     }
+
+     #bottom {
+         height: 35px;
+         width: 320px;
+         color: #2823FD;
+         font: normal normal normal 11px/13px Varela Round;
+         margin-top: 20px;
+     }
+ }
