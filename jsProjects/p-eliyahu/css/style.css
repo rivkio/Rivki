@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+
+}
+:host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+:host,
+:root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+:host,
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+:root {
+    --two-color: rgb(181, 161, 104);
+    --bg-color: linear-gradient(to bottom, rgba(165, 162, 162, 0.3) 15%, rgba(121, 121, 121, 0.7) 85%, #030303 100%);
+    --second-bg-color: #cac6c6;
+    --two-color: #b5a168;
+    --contact-color: #fff1f1;
+    --text-color: #2a2a2a;
+    --second-color: #202020;
+    --second-main-color: rgb(128, 131, 133);
+    --main-color: linear-gradient(to bottom, rgba(214, 205, 205, 0.3) 15%, rgba(121, 121, 121, 0.7)) 85%, #a3a3a3;
+    --btn-color: linear-gradient(to bottom, rgba(233, 232, 191, 0.3) 15%, #b5a168 85%, #a09064);
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+
+body {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-image: url(../img/master.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    background-position: center center;
+    animation: 100s ease 0s infinite alternate forwards running slidein;
+}
+
+style attribute {
+    --i: 2;
+}
+
+section {
+    padding: 35px;
+}
+
+.home-text h1 {
+    font-weight: 800;
+    line-height: 1.1;
+    padding-bottom: 40px;
+    font-size: var(--big-font);
+    color: rgba(225, 225, 225, 0.01);
+    background-image: url(../img/master.jpg);
+    background-repeat: repeat;
+    background-clip: text;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    margin: 0px 0px 35px;
+    animation: 15s ease-in-out 0s infinite normal none running animate;
+}
+
+span {
+    color: var(--two-color);
+}
+
+.home-text h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0px 0px 15px;
+}
+
+iframe {
+    width: 100%;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.container {
+    position: relative;
+}
+
+.clock {
+    width: 280px;
+    height: 280px;
+    background-image: url(../img/master.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-position: center center;
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-color);
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i {
+    position: absolute;
+    background-color: var(--clr);
+    width: 6px;
+    height: var(--h);
+    border-radius: 8px;
+}
+
+.clock a {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    text-align: center;
+
+}
+
+clock a b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 25px;
+    color: var(--second-color);
+}
+
+
+.calculator {
+    margin-top: 65px;
+    background-image: url(../img/master.jpg);
+    box-shadow: rgba(113, 115, 119, 0.5) 3px 3px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: 16px;
+    background-position: center center;
+}
+
+.equalBtn {
+    background-color: var(--two-color);
+}
+
+input {
+    width: 230px;
+    font-size: 30px;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
+.operator {
+    color: var(--btn-color);
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: black 2px 2px 35px;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.container_todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.input-container_todo {
+    max-width: 500px;
+    text-align: center;
+    background-image: url(../img/master.jpg);
+    box-shadow: rgba(113, 115, 119, 0.5) 3px 3px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+.input-container_todo h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 10px 0px 15px;
+}
+
+.input-container_todo input {
+    font-size: 16px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+}
+
+input {
+    width: 230px;
+    font-size: 30px;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
+.input-container_todo input[type="button"] {
+    background-color: var(--two-color);
+    color: var(--text-color);
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px 14px;
+}
+
+.input-container_todo input[type="button"]:hover {
+    background-color: var(--second-bg-color);
+}
+
+.todoList_new {
+    width: 70%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.todoList_new li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border-width: 0.125px;
+    border-style: solid;
+    border-color: rgb(161, 159, 159);
+    border-image: initial;
+    padding: 6px 12px;
+    transition: background-color 0.5s ease 0s;
+}
+
+.btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0px 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    background: none;
+}
+
+.editBtn {
+    color: var(--text-color);
+}
+
+.deleteBtn {
+    color: var(--two-color);
+}
+
+.info_weat_new {
+    max-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    box-shadow: rgba(113, 115, 119, 0.5) 3px 3px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    padding: 25px 10px;
+}
+
+.weat_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+}
+
+.form_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form {
+    font-size: var(--p-font);
+    text-align: center;
+    margin: 20px 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(51, 43, 29);
+    border-image: initial;
+}
+
+.weat_btn {
+    display: inline-block;
+    text-align: center;
+    font-size: var(--p-font);
+    background-color: var(--two-color);
+    margin: 0px 25px;
+    border-radius: 5px;
+    padding: 5px 30px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.measurements {
+    position: relative;
+    left: 28px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.measurements h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.measurements a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.container_week_weat {
+    max-width: 800px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.forecast-item div {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 0px;
+    }
+}

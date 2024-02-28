@@ -1,0 +1,19 @@
+.liClass {
+    width: 120px;
+    background-color: red;
+}
+
+.form2 {
+    width: 100px;
+    color: yellow;
+}
+
+.listInput {
+    width: 50px;
+    background-color: palevioletred;
+}
+
+#shopping-list {
+    width: 300px;
+    background-color: yellowgreen;
+}
