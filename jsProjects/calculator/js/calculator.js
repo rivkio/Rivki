@@ -10,6 +10,11 @@ function clearDisplay() {
     document.getElementById('display').value = displayValue;
 }
 
+function deletion() {
+    displayValue = displayValue.slice(0, -1);
+    document.getElementById('display').value = displayValue;
+}
+
 function calculate() {
     try {
         displayValue = eval(displayValue);

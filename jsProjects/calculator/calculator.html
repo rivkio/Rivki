@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<h1>Calculator</h1>
+    <h1>Calculator</h1>
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
@@ -28,9 +28,11 @@
             <button onclick="appendToDisplay('3')">3</button>
             <button onclick="appendToDisplay('*')">*</button>
             <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('00')">00</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="deletion('DEL')">DEL</button>
         </div>
     </div>
 
