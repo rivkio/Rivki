@@ -605,6 +605,15 @@ h3 {
             border-radius: 15px 15px 0 0;
 }
 
+#bg-image4-js{
+    background-image: url('../jsProjects/countries/asset/image-countries.png');
+        width: 100%;
+        height: 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+}
+
 
 
 

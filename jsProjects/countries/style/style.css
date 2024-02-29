@@ -1,5 +1,6 @@
 .card-img-top {
     height: 35%;
+    object-fit: cover;
 }
 
 .fa:hover {
@@ -10,6 +11,6 @@
     margin: 3rem;
 }
 
-.card{
+.card {
     height: 35vh;
 }

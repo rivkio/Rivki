@@ -4,14 +4,20 @@ import { getData, likedCountries, updateData } from "./storageService.js";
 const cards = document.getElementById('cards');
 const searchInput = document.getElementById('search');
 
-searchInput.addEventListener('keyup', (e) => {
-    //reset();
+searchInput.addEventListener('input', (e) => {
+
+    reset();
     if (e.target.value) {
         cards.innerHTML = '';
         search(e.target.value);
         createCardsList();
+
+    } else {
+        cards.innerHTML = '';
+        createCardsList();
     }
 });
+
 
 const createCard = (country) => {
     const card = document.createElement('div');
