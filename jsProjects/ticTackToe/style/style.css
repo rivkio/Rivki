@@ -55,3 +55,15 @@ h1 {
     color: #6b6774;
     text-shadow: 1px 1px 2px #cb90a9;
 }
+
+
+@media screen and (max-width:1200px) {
+    .tictactoe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tictactoe .btn {
+        font-size: 90px;
+    }
+}

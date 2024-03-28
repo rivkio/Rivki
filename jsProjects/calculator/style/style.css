@@ -49,3 +49,23 @@ button {
 button:hover {
     background-color: #ddd;
 }
+
+
+@media screen and (max-width:1200px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .calculator {
+        width: 250px;
+        height: 330px;
+    }
+
+    #display {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

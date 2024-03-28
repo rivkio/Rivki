@@ -1,0 +1,152 @@
+body {
+    background-color: #6b6774;
+}
+
+h1 {
+    text-align: center;
+    color: #cb90a9;
+    font-weight: 600;
+    font-size: 5em;
+    text-shadow: 1px 1px 2px #f9fdff;
+}
+
+.up-form {
+    width: 25%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#input-name {
+    background-color: #5573a0;
+    border-radius: 5px;
+    margin: auto;
+    height: 30px;
+    width: 250px;
+    border: 2px solid #cb90a9;
+    font-size: 16px;
+    font-weight: 600;
+    color: #cb90a9;
+    box-shadow: 2px 2px 5px #cb90a9;
+}
+
+#btn-add {
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #cb90a9;
+    color: #5573a0;
+    font-weight: 800;
+    box-shadow: 2px 2px 5px #5573a0;
+}
+
+.listInput {
+    width: 50px;
+    height: 30px;
+    background-color: #cb90a9;
+    display: flex;
+    color: #6b6774;
+    border: 2px solid #cb90a9;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    height: 40px;
+}
+
+
+
+#shopping-list {
+    width: 30%;
+    margin: auto;
+    list-style-type: none;
+
+}
+
+.form2 {
+    display: flex;
+    justify-content: center;
+
+    width: 400px;
+    margin-right: 20px;
+
+}
+
+.liClass {
+    width: 350px;
+    height: 25px;
+    margin-bottom: 15px;
+
+}
+
+.form2::before {
+    content: "\2022";
+    /* סימן העיגול */
+    color: #cb90a9;
+    /* צבע העיגול */
+    font-size: 2em;
+    /* גודל העיגול */
+    margin-right: 20px;
+    /* מרווח מימין */
+}
+
+.listInput {
+    border-radius: 5px;
+    height: 25px;
+    width: 250px;
+}
+
+
+.deleteBtn {
+    font-size: 22px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #5573a0;
+    color: #cb90a9;
+    box-shadow: 2px 2px 5px #cb90a9;
+}
+
+.favBtn {
+    font-size: 25px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #5573a0;
+    color: #cb90a9;
+    box-shadow: 2px 2px 5px #cb90a9;
+}
+
+
+@media screen and (max-width:1200px) {
+    #shopping-list {
+        margin: 0;
+        width: 100%;
+    }
+
+  h1 {
+      font-size: 4em;
+  }
+
+    .form2 {
+        width: 100%;
+    }
+
+    .form2::before {
+        display: none;
+    }
+
+    .listInput {
+        width: 150px;
+    }
+
+    .up-form {
+        width: 50%;
+    }
+
+}

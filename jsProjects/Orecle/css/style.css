@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.site-header {
+    background-color: rgb(0, 68, 68);
+    color: white;
+    padding: 32px;
+    font-size: xx-large;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid rgb(13, 133, 157);
+    width: 10vw;
+    border-radius: 50%;
+    height: 10vw;
+    animation: spin 1s linear infinite;
+    box-shadow: 1px 1px 8px royalblue;
+    background-image: url("../asset/oracle.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate {
+    animation: rotate 1s linear, color-change 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.text {
+    font-size: 40px;
+    color: #004444;
+}
+
+
+
+@keyframes color-change {
+    0% {
+        color: #10abab;
+        ;
+    }
+
+    100% {
+        color: tan;
+    }
+}
+
+#oracle-answer {
+    font-weight: 600;
+}
+
+#btn-oracle {
+    background-color: #004444;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .site-header {
+        padding: 16px;
+        font-size: x-large;
+    }
+
+    .spinner {
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    #oracle-answer {
+        font-weight: 400;
+    }
+
+    #btn-oracle {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}

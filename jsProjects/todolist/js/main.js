@@ -1,86 +1,86 @@
-import { Contact } from "./contact.js";
-import { Contacts } from "./contacts.js";
+import { Shopping } from "./shopping.js";
+import { ShoppingList } from "./shoppingList.js";
 import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid@5.0.6/+esm';
 
 const inputName = document.getElementById('input-name');
 const addButton = document.getElementById('btn-add');
-const contactList = document.getElementById('contact-list');
+const shevi = document.getElementById('shopping-list');
 
-const contacts = new Contacts();
+
+const shoppingList = new ShoppingList();
+
+// inputName.addEventListener('input', function () {
+//     // הגדרת הצבע של ה־input בעת הקלדה
+//     this.style.backgroundColor = '#cb90a9';
+// });
 
 addButton.addEventListener('click', (e) => {
     const name = inputName.value;
 
-    const contact = new Contact(nanoid(), name);
-    contacts.add(contact);
-    console.log(contact)
+    const shopping = new Shopping(nanoid(), name);
+    shoppingList.add(shopping);
+    console.log(shopping);
     inputName.value = "";
 
     render();
 });
 
+
 function render() {
-    contactList.innerHTML = "";
-    contacts.array.forEach(c => {
+    shevi.innerHTML = "";
+    shoppingList.array.forEach(s => {
 
         const li = document.createElement('li');
-        const form = document.createElement('form');
-        form.classList.add('d-flex', 'justify-center', 'gap-2', 'p-2');
+        li.classList = 'liClass'
+        const form = document.createElement('form')
+        form.classList.add()
+        form.classList = 'form2';
 
-        //input: name
         const input = document.createElement('input');
         input.type = 'text';
-        input.classList.add('fs-2');
+        input.classList.add;
+        input.classList = 'listInput';
         input.required = true;
-        input.placeholder = 'Name';
-        input.value = c.name;
+        input.placeholder = 'Product';
+        input.value = s.name;
 
-        //button: delete
+
         const deleteButton = document.createElement('button');
         deleteButton.type = 'button';
-        deleteButton.classList.add('btn', 'btn-danger');
-        deleteButton.innerHTML = '<i class="bi bi-trash3 fs-2 text-white"></i>';
+        deleteButton.classList.add('deleteBtn');
+        deleteButton.classList.add('bx', 'bx-trash');
+
         deleteButton.addEventListener('click', () => {
-            //delete the contact from the array:
-            contacts.remove(c.id);
+            shoppingList.remove(s.id);
             render();
-        })
+        });
 
-        //button: edit
-        const editButton = document.createElement('button');
-        editButton.type = 'button';
-        editButton.classList.add('btn', 'btn-warning');
-        editButton.innerHTML = '<i class="bi bi-pencil fs-2 text-white"></i>';
-        editButton.addEventListener('click', () => {
-            contacts.edit(c.id, input.value);
-            //render();
-        })
 
-        //button: favorite
         const favoriteButton = document.createElement('button');
         favoriteButton.type = 'button';
-        favoriteButton.classList.add('btn', 'btn-success');
-
-        const icon = c.favorite ? 'bi-star-fill' : 'bi-star';
-        favoriteButton.innerHTML = `<i class="bi ${icon} fs-2 text-white"></i>`;
+        favoriteButton.className = 'favBtn';
+        favoriteButton.innerHTML = s.favorite ? '<i class="bx bxs-heart"></i>' : '<i class="bx bx-heart"></i>';
         favoriteButton.addEventListener('click', () => {
             //save to array:
-            contacts.toggleFavorite(c.id);
+            shoppingList.toggleFavorite(s.id);
             //show the updated html:
             render();
-        })
+        });
 
-        //append elements to form
+        // const icon = c.favorite ? 'bi-star-fill' : 'bi-star';
+        // favoriteButton.innerHTML = ` ${icon};
+
+
         form.appendChild(input);
         form.appendChild(deleteButton);
-        form.appendChild(editButton);
         form.appendChild(favoriteButton);
 
-        //append form to li
+
         li.appendChild(form);
 
-        //append li to contactList
-        contactList.appendChild(li);
-    })
+
+        shevi.appendChild(li);
+    });
 }
+
 render();

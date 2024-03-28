@@ -578,6 +578,34 @@ h3 {
     margin-top: 1.5em;
 }
 
+.card-js {
+    box-shadow: 3px 3px 16px black;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 330px;
+    border-radius: 15px;
+    margin: 2em;
+    line-height: 2;
+    background: #f9fdff;
+    transition: all 0.3s ease;
+    padding-bottom: 1em;
+}
+
+.card-js:hover {
+    width: 210px;
+    height: 340px;
+    background: #E9E8EC;
+}
+
+#container-gallery .card-js p {
+    font-size: 12px;
+    width: 170px;
+    margin: auto;
+    line-height: 1.2;
+    color: #6b6774;
+}
+
 #bg-image1-js {
     background-image: url('../jsProjects/TicTackToe/asset/Tic-Tack-Toe.jpg');
     width: 100%;
@@ -587,34 +615,117 @@ h3 {
     border-radius: 15px 15px 0 0;
 }
 
-#bg-image2-js{
-        background-image: url('../jsProjects/calculator/asset/M-CA2015.jpg');
-            width: 100%;
-            height: 35%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 15px 15px 0 0;
+#bg-image2-js {
+    background-image: url('../jsProjects/calculator/asset/M-CA2015.jpg');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-#bg-image3-js{
-        background-image: url('../jsProjects/todolist-rivki/asset/printable-to-do-list.webp');
-            width: 100%;
-            height: 35%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 15px 15px 0 0;
+#bg-image3-js {
+    background-image: url('../jsProjects/TodoList/asset/printable-to-do-list.webp');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-#bg-image4-js{
+#bg-image4-js {
     background-image: url('../jsProjects/countries/asset/image-countries.png');
-        width: 100%;
-        height: 35%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
 }
 
+#bg-image5-js {
+    background-image: url('../jsProjects/mamory-game/asset/memory-game.jpeg');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
 
+#bg-image6-js {
+    background-image: url('../jsProjects/Snake/img/snake-game-juego-de-la-serpierte.png');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image7-js {
+    background-image: url('../jsProjects/Rick\ and\ Morty/asset/צילום מסך 2024-03-06 153102.png');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image8-js {
+    background-image: url('../jsProjects/Orecle/asset/oracle.png');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#bg-image9-js {
+    background-image: url('../jsProjects/Clock/asset/wall-decor-clock-home-decor-500x500.webp');
+    width: 100%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#container-gallery .card-js .btn-gallery a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 85%;
+    background: #cb90a9;
+    border: 2px solid #cb90a9;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #6b6774;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#container-gallery .card-js .btn-gallery a:hover {
+    color: #cb90a9;
+}
+
+#container-gallery .card-js .btn-gallery a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f9fdff;
+    z-index: -1;
+    transition: .5s;
+}
+
+#container-gallery .card-js .btn-gallery a:hover::before {
+    width: 100%;
+}
 
 
 

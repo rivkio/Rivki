@@ -9,7 +9,7 @@ btns.forEach(b => {
 function btnClick() {
     if (this.textContent != "") return
     btnClicked++
-    
+
     if (turn) this.textContent = 'X'
     else this.textContent = 'O'
 
@@ -23,15 +23,70 @@ function btnClick() {
         btns[obj.pos[1]].style.color = "#cb90a9";
         btns[obj.pos[2]].style.color = "#cb90a9";
 
+
+
+
         setTimeout(() => {
-            alert(this.textContent + " IS WINNER")
-            reset()
-        }, 100)
+            const div = document.createElement('div')
+            div.innerHTML = `Well done  ${this.textContent} Win!! 🏆`
+            div.style.background = '#f9fdff'
+            div.style.color = '#5573a0'
+            div.style.fontFamily = "Anta";
+            div.style.fontWeight = '500'
+            div.style.fontSize = '25px'
+            div.style.width = '200px'
+            div.style.height = '120px'
+            div.style.border = '3px solid #6b6774'
+            div.style.borderRadius = '10px'
+            div.style.boxShadow = '1px 1px 4px 1px #cb90a9';
+            div.style.fontWeight = '600'
+            div.style.textAlign = 'center'
+            div.style.display = 'flex'
+            div.style.justifyContent = 'center'
+            div.style.alignItems = 'center'
+            div.style.position = 'absolute'
+            div.style.top = '50%'
+            div.style.left = '50%'
+            div.style.marginTop = '-70px'
+            div.style.marginLeft = '-90px'
+            document.body.appendChild(div)
+            setTimeout(() => {
+                div.remove(); // תסיר את הדיב אחרי שנייה
+                reset();
+            }, 1500); // זמן המתנה במילישניות לאחר כניסה הדיב למסך
+        }, 100);
+
     } else if (obj.isTie) {
+
         setTimeout(() => {
-            alert(" IS A TIE")
-            reset()
-        }, 100)
+            const div = document.createElement('div')
+            div.innerHTML = ' IS A TIE'
+            div.style.background = '#f9fdff'
+            div.style.color = '#5573a0'
+            div.style.fontFamily = "Anta";
+            div.style.fontWeight = '500'
+            div.style.fontSize = '25px'
+            div.style.width = '200px'
+            div.style.height = '120px'
+            div.style.border = '3px solid #6b6774'
+            div.style.borderRadius = '10px'
+            div.style.boxShadow = '1px 1px 4px 1px #cb90a9';
+            div.style.fontWeight = '600'
+            div.style.textAlign = 'center'
+            div.style.display = 'flex'
+            div.style.justifyContent = 'center'
+            div.style.alignItems = 'center'
+            div.style.position = 'absolute'
+            div.style.top = '50%'
+            div.style.left = '50%'
+            div.style.marginTop = '-70px'
+            div.style.marginLeft = '-90px'
+            document.body.appendChild(div)
+            setTimeout(() => {
+                div.remove(); // תסיר את הדיב אחרי שנייה
+                reset();
+            }, 1500); // זמן המתנה במילישניות לאחר כניסה הדיב למסך
+        }, 100);
     }
 
     turn = !turn
